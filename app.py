@@ -30,8 +30,8 @@ def load_data():
 
 @st.cache_resource
 def load_model():
-    model2 = keras.models.load_model('model(1).h5')
-    model2.load_weights('model(1).h5')
+    model2 = keras.models.load_model('model.h5')
+    model2.load_weights('model.h5')
     return model2
 
 data = load_data()
